@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TickTackToe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Tick Tack Toe</h1>
+    <div class="namesContainer">
+        <button id="addPlayerButton">Add player names</button>
+        <form id="formElement" style="display: none" action="">
+            <div class="player1Name">
+                <label for="player1">Player 1</label>
+                    <input id="player1" type="text" placeholder="Player 1">
+            </div>
+            <div class="player2Name">
+                <label for="player2">Player 2</label>
+                    <input id="player2" type="text" placeholder="Player 2">
+            </div>
+            <button type="button" id="addButton">Add</button>
+        </form>
+        <div id="playerNames"></div>
+    </div>
+    <div class="board" id="board" style="display: none;">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div id="winningMessageText"></div>
+        <button id="restartButton">Restart</button>
+    </div>
+       
+</body>
+</html>
